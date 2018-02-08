@@ -3,7 +3,7 @@
 package goquirc
 
 // #cgo LDFLAGS: -Lquirc -lquirc -lm
-// #cgo CFLAGS: -Iquirc/lib
+// #cgo CFLAGS: -Iquirc/lib -O3 -DQUIRC_MAX_REGIONS=65534 -fPIC
 // #include <quirc.h>
 // #include <stdio.h>
 import "C"
